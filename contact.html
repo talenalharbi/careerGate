@@ -3,8 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <title>CareerGate | Home</title>
-    <link rel="stylesheet" href="../CSS/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f4f6f9, #e9eef5);
+            color: #2d3436;
+        }
+
+        /* ===== Header ===== */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #6c5ce7;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2d3436;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #6c5ce7;
+        }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1e272e;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #636e72;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #6c5ce7;
+            color: white;
+            padding: 14px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(108,92,231,0.3);
+        }
+
+        .btn:hover {
+            background: #5a4bcf;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(108,92,231,0.4);
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e272e;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -23,12 +141,15 @@
 
 <section class="hero">
     <h2>Your Dream Job Starts Here ✨</h2>
-    <p>Fill in your information and discover jobs that match your skills.</p>
-    <a href="job-application.html" class="btn">Start Now</a>
+    <p>
+        CareerGate connects talented individuals with the right opportunities.
+        Fill in your details and let us match you with jobs that fit your skills.
+    </p>
+    <a href="job-application.html" class="btn">Start Your Journey</a>
 </section>
 
 <footer>
-    <p>© 2025 CareerGate. All rights reserved.</p>
+    © 2026 CareerGate. All rights reserved.
 </footer>
 
 </body>
