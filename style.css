@@ -1,4 +1,4 @@
-/* ===== Global Styles ===== */
+/* ===== Global ===== */
 * {
     margin: 0;
     padding: 0;
@@ -16,53 +16,38 @@ body {
 header {
     background: linear-gradient(135deg, #4a6fa5, #6c5ce7);
     color: white;
-    text-align: center;
-    padding: 35px 15px;
+    padding: 20px 0;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 32px;
-    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 /* ===== Navigation ===== */
 nav {
-    background: #1e272e;
+    text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-nav ul li a {
-    display: block;
-    padding: 15px 25px;
+nav a {
     color: white;
     text-decoration: none;
+    margin: 0 15px;
     font-weight: 500;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
-nav ul li a:hover {
-    background: #6c5ce7;
+nav a:hover {
+    text-decoration: underline;
 }
 
-/* ===== Sections ===== */
+/* ===== Section ===== */
 section {
     padding: 60px 20px;
     text-align: center;
 }
 
-/* ===== Hero Section ===== */
-.hero {
-    background: linear-gradient(135deg, #eef1f6, #dfe6f0);
-    padding: 80px 20px;
-}
-
+/* ===== Hero ===== */
 .hero h2 {
     font-size: 36px;
     margin-bottom: 20px;
@@ -70,20 +55,20 @@ section {
 
 .hero p {
     font-size: 18px;
-    color: #636e72;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    color: #555;
 }
 
 /* ===== Buttons ===== */
 .btn {
+    display: inline-block;
+    padding: 12px 28px;
     background: #6c5ce7;
     color: white;
-    padding: 12px 30px;
-    border-radius: 25px;
     text-decoration: none;
+    border-radius: 25px;
     font-weight: 600;
-    transition: 0.3s ease;
-    display: inline-block;
+    transition: 0.3s;
 }
 
 .btn:hover {
@@ -91,19 +76,29 @@ section {
     transform: translateY(-3px);
 }
 
+/* ===== Cards ===== */
+.card {
+    background: white;
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
 /* ===== Forms ===== */
 form {
-    max-width: 800px;
+    max-width: 700px;
     margin: auto;
     background: white;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    text-align: left;
 }
 
 form h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin: 20px 0 10px;
     color: #6c5ce7;
 }
 
@@ -112,42 +107,22 @@ input, select, textarea {
     padding: 12px;
     margin: 8px 0;
     border-radius: 8px;
-    border: 1px solid #dcdde1;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-input:focus, select:focus, textarea:focus {
-    outline: none;
-    border-color: #6c5ce7;
-    box-shadow: 0 0 0 2px rgba(108,92,231,0.1);
+    border: 1px solid #ccc;
 }
 
 button {
+    width: 100%;
+    padding: 12px;
     background: #6c5ce7;
     color: white;
-    padding: 12px 25px;
     border: none;
     border-radius: 25px;
-    font-weight: 600;
+    font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 button:hover {
     background: #5a4bcf;
-    transform: translateY(-3px);
-}
-
-/* ===== About Page Image ===== */
-#about img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin: 20px auto;
-    display: block;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
 /* ===== Footer ===== */
@@ -155,21 +130,13 @@ footer {
     background: #1e272e;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
     margin-top: 40px;
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
     .hero h2 {
         font-size: 26px;
-    }
-
-    section {
-        padding: 40px 15px;
     }
 }
