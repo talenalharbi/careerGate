@@ -1,101 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>CareerGate | Apply Now</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply | CareerGate</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="navbar">
-    <div class="logo">CareerGate</div>
+<header>
+    <h1>Job Application</h1>
     <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="contact-us.html">Contact</a></li>
-            <li><a href="job-application.html" class="active">Apply Now</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="jobapplication.html">Apply</a>
     </nav>
 </header>
 
-<section class="form-section">
-    <div class="form-container">
-        <h1>Job Application Form</h1>
+<section>
+    <form>
+        <h2>Personal Information</h2>
 
-        <form>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+        <input type="email" placeholder="Email" required>
 
-            <h2>Personal Information</h2>
-            <div class="form-grid">
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="tel" placeholder="Phone Number" required>
-            </div>
+        <h2>Education</h2>
 
-            <h2>Education</h2>
-            <div class="form-grid">
-                <select required>
-                    <option value="">Select Degree</option>
-                    <option>Bachelor</option>
-                    <option>Master</option>
-                    <option>PhD</option>
-                </select>
+        <input type="text" placeholder="University" required>
+        <input type="text" placeholder="Major" required>
 
-                <input type="text" placeholder="University Name" required>
-                <input type="text" placeholder="Major" required>
-                <input type="text" placeholder="GPA (e.g. 4.5 / 5)" required>
-                <input type="number" placeholder="Graduation Year" required>
-            </div>
+        <h2>Skills</h2>
 
-            <h2>Work Status</h2>
+        <textarea rows="4" placeholder="Your Skills" required></textarea>
 
-            <div class="radio-group">
-                <label>
-                    <input type="radio" name="status" value="experienced" onclick="showExperience()"> 
-                    I have experience
-                </label>
-
-                <label>
-                    <input type="radio" name="status" value="fresh" onclick="hideExperience()"> 
-                    Fresh Graduate
-                </label>
-            </div>
-
-            <div id="experienceSection" class="hidden">
-                <h2>Experience / Academic Projects</h2>
-                <div class="form-grid">
-                    <input type="text" placeholder="Company or Project Name">
-                    <input type="text" placeholder="Job Title or Role">
-                    <input type="number" placeholder="Years (if applicable)">
-                </div>
-                <textarea placeholder="Describe your responsibilities or project details..." rows="4"></textarea>
-            </div>
-
-            <h2>Skills</h2>
-            <textarea placeholder="Write your skills here..." rows="3" required></textarea>
-
-            <button type="submit" class="primary-btn">Submit Application</button>
-
-        </form>
-    </div>
+        <button type="submit">Submit Application</button>
+    </form>
 </section>
 
 <footer>
-    © 2026 CareerGate. All rights reserved.
+    © 2026 CareerGate.
 </footer>
-
-<script>
-    function showExperience() {
-        document.getElementById("experienceSection").classList.remove("hidden");
-    }
-
-    function hideExperience() {
-        document.getElementById("experienceSection").classList.add("hidden");
-    }
-</script>
 
 </body>
 </html>
