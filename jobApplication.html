@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apply for Jobs</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        #experienceSection {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Job Application Form</h1>
+</header>
+
+<section>
+    <form>
+
+        <h2>Personal Information</h2>
+
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+        <h2>Education</h2>
+
+        <select required>
+            <option value="">Select Degree</option>
+            <option>Bachelor</option>
+            <option>Master</option>
+            <option>PhD</option>
+        </select>
+
+        <input type="text" placeholder="University Name" required>
+        <input type="text" placeholder="Major" required>
+        <input type="text" placeholder="GPA (e.g. 4.5 / 5)" required>
+        <input type="number" placeholder="Graduation Year" required>
+
+        <h2>Work Status</h2>
+
+        <label>
+            <input type="radio" name="status" value="experienced" onclick="showExperience()"> 
+            I have experience
+        </label>
+
+        <label>
+            <input type="radio" name="status" value="fresh" onclick="hideExperience()"> 
+            Fresh Graduate
+        </label>
+
+        <div id="experienceSection">
+
+            <h2>Experience / Academic Projects</h2>
+
+            <input type="text" placeholder="Company or Project Name">
+            <input type="text" placeholder="Job Title or Project Role">
+            <input type="number" placeholder="Years (if applicable)">
+            <textarea placeholder="Describe your responsibilities or project details..." rows="4"></textarea>
+
+        </div>
+
+        <h2>Skills</h2>
+
+        <textarea placeholder="Write your skills here..." rows="3" required></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit Application ✨</button>
+
+    </form>
+</section>
+
+<script>
+    function showExperience() {
+        document.getElementById("experienceSection").style.display = "block";
+    }
+
+    function hideExperience() {
+        document.getElementById("experienceSection").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
+
+        
