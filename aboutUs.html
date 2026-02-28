@@ -1,154 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>About Us | CareerGate</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #f4f6f9, #e9eef5);
-            color: #2d3436;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        header {
-            text-align: center;
-            padding: 60px 20px 30px;
-        }
-
-        header h1 {
-            font-size: 36px;
-            font-weight: 600;
-            color: #1e272e;
-        }
-
-        header p {
-            margin-top: 10px;
-            font-size: 16px;
-            color: #636e72;
-        }
-
-        section {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            padding: 40px 20px;
-        }
-
-        .team-wrapper {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            width: 100%;
-            max-width: 1000px;
-        }
-
-        .card {
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-        }
-
-        .avatar {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            background-color: #dfe6e9;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            font-weight: 600;
-            color: #2d3436;
-        }
-
-        .card h2 {
-            font-size: 20px;
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-
-        .role {
-            font-size: 14px;
-            color: #6c5ce7;
-            margin-bottom: 15px;
-        }
-
-        .info {
-            font-size: 14px;
-            color: #636e72;
-            margin: 5px 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            background: #1e272e;
-            color: white;
-        }
-
-        @media (max-width: 500px) {
-            header h1 {
-                font-size: 28px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-    <h1>Meet Our Team</h1>
-    <p>The minds behind CareerGate</p>
+    <h1>About Our Team</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="jobapplication.html">Apply</a>
+    </nav>
 </header>
 
 <section>
-    <div class="team-wrapper">
+    <div class="card">
+        <h2>Layan Awad</h2>
+        <p>Software Engineering Student</p>
+        <p>ID: 2317213</p>
+    </div>
 
-        <div class="card">
-            <div class="avatar">LA</div>
-            <h2>Layan Awad</h2>
-            <div class="role">Software Engineering Student</div>
-            <p class="info"><strong>Student ID:</strong> 2317213</p>
-            <p class="info">Passionate about building smart and user-friendly systems.</p>
-        </div>
-
-        <div class="card">
-            <div class="avatar">TA</div>
-            <h2>Talen Alharbi</h2>
-            <div class="role">Software Engineering Student</div>
-            <p class="info"><strong>Student ID:</strong> 2314627</p>
-            <p class="info">Focused on designing efficient and scalable solutions.</p>
-        </div>
-
+    <div class="card">
+        <h2>Talen Alharbi</h2>
+        <p>Software Engineering Student</p>
+        <p>ID: 2314627</p>
     </div>
 </section>
 
 <footer>
-    © 2026 CareerGate Team | Built with dedication 💗
+    © 2026 CareerGate.
 </footer>
 
 </body>
