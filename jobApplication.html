@@ -2,92 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Apply for Jobs</title>
+    <title>CareerGate | Apply Now</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-        #experienceSection {
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Job Application Form</h1>
+<header class="navbar">
+    <div class="logo">CareerGate</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="job-application.html" class="active">Apply Now</a></li>
+        </ul>
+    </nav>
 </header>
 
-<section>
-    <form>
+<section class="form-section">
+    <div class="form-container">
+        <h1>Job Application Form</h1>
 
-        <h2>Personal Information</h2>
+        <form>
 
-        <input type="text" placeholder="First Name" required>
-        <input type="text" placeholder="Last Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="tel" placeholder="Phone Number" required>
+            <h2>Personal Information</h2>
+            <div class="form-grid">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+            </div>
 
-        <h2>Education</h2>
+            <h2>Education</h2>
+            <div class="form-grid">
+                <select required>
+                    <option value="">Select Degree</option>
+                    <option>Bachelor</option>
+                    <option>Master</option>
+                    <option>PhD</option>
+                </select>
 
-        <select required>
-            <option value="">Select Degree</option>
-            <option>Bachelor</option>
-            <option>Master</option>
-            <option>PhD</option>
-        </select>
+                <input type="text" placeholder="University Name" required>
+                <input type="text" placeholder="Major" required>
+                <input type="text" placeholder="GPA (e.g. 4.5 / 5)" required>
+                <input type="number" placeholder="Graduation Year" required>
+            </div>
 
-        <input type="text" placeholder="University Name" required>
-        <input type="text" placeholder="Major" required>
-        <input type="text" placeholder="GPA (e.g. 4.5 / 5)" required>
-        <input type="number" placeholder="Graduation Year" required>
+            <h2>Work Status</h2>
 
-        <h2>Work Status</h2>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="status" value="experienced" onclick="showExperience()"> 
+                    I have experience
+                </label>
 
-        <label>
-            <input type="radio" name="status" value="experienced" onclick="showExperience()"> 
-            I have experience
-        </label>
+                <label>
+                    <input type="radio" name="status" value="fresh" onclick="hideExperience()"> 
+                    Fresh Graduate
+                </label>
+            </div>
 
-        <label>
-            <input type="radio" name="status" value="fresh" onclick="hideExperience()"> 
-            Fresh Graduate
-        </label>
+            <div id="experienceSection" class="hidden">
+                <h2>Experience / Academic Projects</h2>
+                <div class="form-grid">
+                    <input type="text" placeholder="Company or Project Name">
+                    <input type="text" placeholder="Job Title or Role">
+                    <input type="number" placeholder="Years (if applicable)">
+                </div>
+                <textarea placeholder="Describe your responsibilities or project details..." rows="4"></textarea>
+            </div>
 
-        <div id="experienceSection">
+            <h2>Skills</h2>
+            <textarea placeholder="Write your skills here..." rows="3" required></textarea>
 
-            <h2>Experience / Academic Projects</h2>
+            <button type="submit" class="primary-btn">Submit Application</button>
 
-            <input type="text" placeholder="Company or Project Name">
-            <input type="text" placeholder="Job Title or Project Role">
-            <input type="number" placeholder="Years (if applicable)">
-            <textarea placeholder="Describe your responsibilities or project details..." rows="4"></textarea>
-
-        </div>
-
-        <h2>Skills</h2>
-
-        <textarea placeholder="Write your skills here..." rows="3" required></textarea>
-
-        <br><br>
-
-        <button type="submit">Submit Application ✨</button>
-
-    </form>
+        </form>
+    </div>
 </section>
+
+<footer>
+    © 2026 CareerGate. All rights reserved.
+</footer>
 
 <script>
     function showExperience() {
-        document.getElementById("experienceSection").style.display = "block";
+        document.getElementById("experienceSection").classList.remove("hidden");
     }
 
     function hideExperience() {
-        document.getElementById("experienceSection").style.display = "none";
+        document.getElementById("experienceSection").classList.add("hidden");
     }
 </script>
 
 </body>
 </html>
-
-        
